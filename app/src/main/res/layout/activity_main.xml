@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="FECHA:" />
+
+            <TextView
+                android:id="@+id/tvFechaMain"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:text="Dom, 15 Enero 2018" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:text="USUARIO:" />
+
+            <TextView
+                android:id="@+id/tvUsuarioMain"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="15"
+                android:text="Demo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RUTA:" />
+
+            <TextView
+                android:id="@+id/tvRutaMain"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Lima 01" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btSincronizarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_cloud_download"
+            android:paddingRight="40dp"
+            android:text="@string/sincronizar"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:id="@+id/btLocalesMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_business_center"
+            android:paddingRight="40dp"
+            android:text="@string/locales"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:id="@+id/btEnviarTodoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cloud_upload"
+            android:paddingRight="20dp"
+            android:text="@string/enviar_todo"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:id="@+id/btSalirMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_out"
+            android:paddingRight="40dp"
+            android:text="@string/salir"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+    </LinearLayout>
+
+</LinearLayout>

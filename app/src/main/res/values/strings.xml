@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Cliente Incógnito</string>
+    <string name="login_acceder">INGRESAR</string>
+    <string name="login_limpiar_app">LIMPIAR APP</string>
+    <string name="login_footer_1">2018 © UnkNown Soft.</string>
+    <string name="login_titulo">CLIENTE INCÓGNITO</string>
+    <string name="login_subtitulo">Sistema de Auditoria Incognita</string>
+    <string name="sincronizar">Sincronizar</string>
+    <string name="sincronizacion_correcta">Sincronización Correcta!</string>
+    <string name="locales">Locales</string>
+    <string name="salir">Salir</string>
+    <string name="volver">Volver</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="evaluar">Evaluar</string>
+    <string name="fotos">Fotos</string>
+    <string name="marcar_salida">Marcar Salida del Local</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="enviar_todo">Enviar Todo</string>
+    <string name="reportar_incidencia">Reportar Incidencia</string>
+    <string name="tomar_foto">Tomar Foto</string>
+    <string name="title_dialog_no_inter">ERROR!</string>
+    <string name="msg_dialog_no_inter">Necesita activar datos o wifi</string>
+    <string name="enviar_evaluacion">Enviar Evaluación</string>
+    <string name="ocurrio_error">Ocurrió un Error!</string>
+    <string name="actualizar_version">Necesita Actualizar la versión</string>
+    <string name="no_conecta">No se pudo conectar</string>
+    <string name="datos_incorrectos">Datos Incorrectos</string>
+    <string name="habilitar_permiso">Necesita habilitar los permisos!</string>
+    <string name="hello">Hello World, CamTestActivity!</string>
+    <string name="envio_correcto">Envío Correcto!</string>
+    <string name="no_se_envio">No se pudo enviar!</string>
+    <string name="marcacion_correcta">Marcación Correcta!</string>
+    <string name="title_dialog_acceso">VALIDANDO ACCESO</string>
+    <string name="msg_dialog_acceso">Espere por favor</string>
+    <string name="sincronizando">SINCRONIZANDO</string>
+    <string name="enviando_encuesta">Enviando Encuesta</string>
+    <string name="enviando_info">Enviando Información</string>
+    <string name="title_dialog_borrar">EN HORA BUENA!</string>
+    <string name="msg_dialog_borrar">Se borraron los datos</string>
+    <string name="atencion">Atención!</string>
+    <string name="finalizar_visita">¿Desea finalizar la visita?</string>
+    <string name="sin_criterios">No se encontraron criterios a evaluar</string>
+    <string name="sin_pendientes">No hay pendientes para enviar</string>
+    <string name="save_pendiente">No se pudo enviar la información, se guardó en pendientes</string>
+    <!-- UI Elements -->
+    <string name="btn_capture">Click</string>
+
+    <!-- Toast Messages -->
+    <string name="camera_not_found">No camera harware found</string>
+    <string name="take_photo_help">Touch anywhere on screen to take picture</string>
+    <string name="presiona_pantalla">Presiona en la pantalla para tomar foto</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DDDDDD</color>
+    <color name="colorPrimaryDark">#eb8f06</color>
+    <color name="colorAccent">#8e8c8c</color>
+    <color name="colorStartLogin">#DDDDDD</color>
+    <color name="colorEndLogin">#DDDDDD</color>
+    <color name="colorPrimayB">#007bff</color>
+    <color name="colorDangerB">#dc3545</color>
+    <color name="colorWarningB">#ffc107</color>
+    <color name="colorSuccessB">#28a745</color>
+    <color name="colorInfoB">#17a2b8</color>
+    <color name="colorGris">#e2e0e0</color>
+    <color name="colorPlomo">#8e8c8c</color>
+    <color name="colorAmarilloClaro">#ffc107</color>
+    <color name="colorVerdeClaro">#5cb85c</color>
+    <color name="colorNaranja">#ff9900</color>
+</resources>

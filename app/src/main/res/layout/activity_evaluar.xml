@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaluarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="ATRIBUTOS DE EVALUACION"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvLocalEvaluar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="LOCAL: LOCAL PRUEBA 01"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCriterioEvaluar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="SIN ATRIBUTOS PARA EVALUAR"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="Debe seleccionar o deseeleccionar las estrellas para calificar"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPuntaje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/view" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/llBotonesEvaluar"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/background_dark" />
+
+            <LinearLayout
+                android:id="@+id/llBotonesEvaluar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:id="@+id/tvItemItem"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="13"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="TOTAL SCORE:"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <RatingBar
+                            android:id="@+id/rbTotal"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:numStars="5"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:stepSize="0.01" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etComentarioEvaluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="INGRESE UN COMENTARIO"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bteEnviarEvaluar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        android:drawableLeft="@drawable/ic_send_black"
+                        android:paddingRight="40dp"
+                        android:text="@string/enviar_evaluacion"
+                        android:textColor="#000"
+                        android:theme="@style/BotonesLogin"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btSgteEvaluar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        android:drawableLeft="@drawable/ic_arrow_right_circle"
+                        android:paddingRight="40dp"
+                        android:text="@string/siguiente"
+                        android:textColor="#000"
+                        android:theme="@style/BotonesLogin" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_left_circle"
+                        android:onClick="volver"
+                        android:paddingRight="40dp"
+                        android:text="@string/volver"
+                        android:textColor="#000"
+                        android:theme="@style/BotonesLogin" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

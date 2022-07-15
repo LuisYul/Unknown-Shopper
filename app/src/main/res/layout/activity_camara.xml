@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CamaraActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:id="@+id/tvTipoFoto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="18"
+                        android:padding="2dp"
+                        android:text="INCIDENCIA"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/ivAddFoto"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_add_circle_black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLocalFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="LOCAL: LOCAL PRUEBA 01" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btTomarFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_camera"
+                    android:paddingRight="40dp"
+                    android:text="@string/tomar_foto"
+                    android:textColor="#000"
+                    android:theme="@style/BotonPlomo" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:id="@+id/rvFotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btEnviarCamara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_alert"
+                    android:paddingRight="40dp"
+                    android:text="@string/reportar_incidencia"
+                    android:textColor="#000"
+                    android:theme="@style/BotonesLogin" />
+
+                <Button
+                    android:id="@+id/btVolverCamara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_arrow_left_circle_32"
+                    android:paddingRight="40dp"
+                    android:text="@string/volver"
+                    android:textColor="#000"
+                    android:theme="@style/BotonesLogin" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

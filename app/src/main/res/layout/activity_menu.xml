@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="LOCAL:"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLocalMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:text="LOCAL PRUEBA 01"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btEvaluarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_star_black"
+            android:paddingRight="40dp"
+            android:text="@string/evaluar"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:id="@+id/btFotosMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_camera"
+            android:paddingRight="40dp"
+            android:text="@string/fotos"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:id="@+id/btMarcarSalidaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_out"
+            android:paddingRight="20dp"
+            android:text="@string/marcar_salida"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btEnviarTodoMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cloud_upload"
+            android:paddingRight="20dp"
+            android:text="@string/enviar_todo"
+            android:textColor="#000"
+            android:theme="@style/BotonesLogin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btCancelarMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:drawableLeft="@drawable/ic_block_black"
+                android:paddingRight="40dp"
+                android:text="@string/cancelar"
+                android:textColor="#000"
+                android:theme="@style/BotonesLogin" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

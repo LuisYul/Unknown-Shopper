@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIAR AUDITORIA"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvMsgDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Username:" />
+
+        <TextView
+            android:id="@+id/tvReportarDialog"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="REPORTAR INCIDENCIA"
+            android:textColor="#3259d0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btNoDialog"
+                android:theme="@style/BotonesLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"/>
+            <Button
+                android:id="@+id/btSiDialog"
+                android:theme="@style/BotonesLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SI"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
