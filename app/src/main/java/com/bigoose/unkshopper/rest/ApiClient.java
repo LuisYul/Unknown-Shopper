@@ -16,7 +16,7 @@ public class ApiClient {
 
     public static final String BASE_URL = "https://servicioincognito.com/unknown_shopper_movil/api_unknown_shopper.php/c_control_v2/";
     private static Retrofit retrofit = null;
-
+    //test
     public static Retrofit getRetrofit() {
 
         Gson gson = new GsonBuilder()
